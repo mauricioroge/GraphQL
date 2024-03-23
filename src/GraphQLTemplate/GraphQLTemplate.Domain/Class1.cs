@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace GraphQLTemplate.Domain
+﻿namespace GraphQLTemplate.Domain
 {
     public class Class1
     {
