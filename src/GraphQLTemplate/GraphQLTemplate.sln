@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C114262E-C9D7-401C-8139-7AE94860B080}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{31A9F4B8-DA9F-4A25-9FFC-55C95D0BDADD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{44A67010-36AF-4089-9DE7-55C68B1D13B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQLTemplate.API", "GraphQLTemplate.API\GraphQLTemplate.API.csproj", "{9E11A655-3521-487B-B023-085DA6F34FA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQLTemplate.Domain", "GraphQLTemplate.Domain\GraphQLTemplate.Domain.csproj", "{54940DE6-F79D-40C2-A70B-84E0B204DF46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQLTemplate.ExternalServices", "GraphQLTemplate.ExternalServices\GraphQLTemplate.ExternalServices.csproj", "{BAD3A913-96D4-4448-AB1B-22C9FEF8833F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E11A655-3521-487B-B023-085DA6F34FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E11A655-3521-487B-B023-085DA6F34FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E11A655-3521-487B-B023-085DA6F34FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E11A655-3521-487B-B023-085DA6F34FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54940DE6-F79D-40C2-A70B-84E0B204DF46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54940DE6-F79D-40C2-A70B-84E0B204DF46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54940DE6-F79D-40C2-A70B-84E0B204DF46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54940DE6-F79D-40C2-A70B-84E0B204DF46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD3A913-96D4-4448-AB1B-22C9FEF8833F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD3A913-96D4-4448-AB1B-22C9FEF8833F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD3A913-96D4-4448-AB1B-22C9FEF8833F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD3A913-96D4-4448-AB1B-22C9FEF8833F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9E11A655-3521-487B-B023-085DA6F34FA6} = {31A9F4B8-DA9F-4A25-9FFC-55C95D0BDADD}
+		{54940DE6-F79D-40C2-A70B-84E0B204DF46} = {C114262E-C9D7-401C-8139-7AE94860B080}
+		{BAD3A913-96D4-4448-AB1B-22C9FEF8833F} = {44A67010-36AF-4089-9DE7-55C68B1D13B5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE260EBD-1FC2-4256-9E2F-81830805E802}
+	EndGlobalSection
+EndGlobal
