@@ -1,7 +1,12 @@
 ﻿namespace GraphQLTemplate.Domain.Entities
 {
-    public class Customer(string name, string phone, string idNumber) : Person(name, phone, idNumber)
+    public class Customer : Person
     {
-        public decimal Cashback { get; set; } = 0m;
+        public decimal Cashback { get; set; }
+
+        public Customer(string name, string phone, string idNumber) : base(name, phone, idNumber)
+        {
+            Cashback = 0m;
+        }
     }
 }

@@ -1,16 +1,17 @@
-using Microsoft.AspNetCore;
+using GraphQLTemplate.GraphQLQueries.QueriesType;
+using GraphQLTemplate.Services;
+using GraphQLTemplate.Services.Interfaces;
 
-namespace GraphQLTemplate.API
-{
-    public class Program
-    {
-        public static void Main(string[] args) => BuildWebHost(args).Run();
+var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
+services.AddTransient<ICustomerService, CustomerService>();
 
-        public static IWebHost BuildWebHost(string[] args)
-        {
-            return WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
-        }
-    }
-}
+services.AddGraphQLServer()
+    .RegisterService<ICustomerService>()
+    .AddQueryType<CustomerQueryType>();
+
+
+var app = builder.Build();
+
+app.MapGraphQL();
+app.Run();

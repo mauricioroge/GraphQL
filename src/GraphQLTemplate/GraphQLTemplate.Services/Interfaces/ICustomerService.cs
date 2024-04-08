@@ -4,6 +4,6 @@ namespace GraphQLTemplate.Services.Interfaces
 {
     public interface ICustomerService
     {
-        IEnumerable<Customer> Get(string name);
+        IEnumerable<Customer> GetPartialName(string name);
     }
 }

@@ -1,18 +1,23 @@
-﻿using GraphQL.Types;
-using GraphQLTemplate.Domain.Entities;
+﻿using GraphQLTemplate.Domain.Entities;
+using HotChocolate.Types;
 
 namespace GraphQLTemplate.Domain.GraphTypes
 {
-    public class StoreType : ObjectGraphType<Store>
+    public class StoreType : ObjectType<Store>
     {
-        public StoreType()
+        public StoreType(IObjectTypeDescriptor<Store> descriptor)
         {
-            Field(x => x.Name)
-                .Description("The Store's Name");
-            Field(x => x.Address)
-                .Description("The Store's Address");
-            Field(x => x.Zipcode)
-                .Description("The Store's Zipcode");
+            descriptor
+                .Field(f => f.Address)
+                .Type<StringType>();
+
+            descriptor
+                .Field(f => f.Name)
+                .Type<StringType>();
+
+            descriptor
+                .Field(f => f.Zipcode)
+                .Type<StringType>();
         }
     }
 }
