@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HotChocolate.Types" Version="13.9.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GraphQLTemplate.Domain\GraphQLTemplate.Domain.csproj" />
+    <ProjectReference Include="..\GraphQLTemplate.Services\GraphQLTemplate.Services.csproj" />
+  </ItemGroup>
+
+</Project>
